@@ -3,7 +3,7 @@ import { createServer } from 'node:http';
 const server = createServer((req, res) => {
   if (req.url === '/health') {
     res.writeHead(200, { 'content-type': 'application/json' });
-    res.end(JSON.stringify({ ok: true }));
+    res.end(JSON.stringify({ ok: true, version: 2 }));
     return;
   }
   res.writeHead(404, { 'content-type': 'text/plain' });

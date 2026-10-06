@@ -8,6 +8,7 @@ envs:
     max: 1
     port: 8080
     health_path: /health
+    public: true
     env: { NODE_ENV: production }
     secrets: {}
   prod:

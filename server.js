@@ -1,6 +1,6 @@
 import { createServer } from 'node:http';
 
-const VERSION = 'v1';
+const VERSION = 'v2';
 
 const server = createServer((req, res) => {
   if (req.url === '/health') {
